@@ -1,18 +1,13 @@
-(()=> {
-  let isEnable = true;
- //  isEnable = 'as';
- //  isEnable = 1212;
-  isEnable = false;
+function hi(name:string | null) {
+   let hello ='hola';
+   if(name){
+     hello += 'name';
+   }else{
+     hello += 'noboy';
+   }
 
-  let isNew: boolean = false;
-  console.log('isNew', isNew);
-  isNew = true;
-  console.log('isNew', isNew);
+   console.log(hello);
+  };
 
-  const random = Math.random();
-  console.log('random', random);
-  isNew = random >= 0.5 ? true : false;
-  console.log('isNew', isNew);
-
-  const myBoolean: boolean = true;
-})();
+hi('nicolas');
+hi (null);
